@@ -1,0 +1,19 @@
+<shared-header banner="http://www.slackandcompany.com/portals/_default/skins/Slack-and-Company2/img/top_logo.png"></shared-header>
+<div class="search-results" id="top">
+	<search-field></search-field>
+	<h4>Search Results for <strong>{{searchTerm}}</strong></h4>
+	<div class="row" ng-if="searchResults">
+		<div class="col-sm-12" ng-repeat="result in searchResults">
+			<h4><a href="{{result.link}}" target="_blank">{{result.title}}</a></h4>
+			<p>{{result.snippet}}</p>
+			<hr />
+		</div>
+	</div>
+	<div ng-if="!searchResults">
+		<p>Sorry, no results were returned.  Please search for another term.</p>
+	</div>
+	<ul class="pagination">
+		<li><a ng-if="pagingData.previousPage" ng-click="previousTen()">Previous</a></li>
+		<li><a ng-if="pagingData.nextPage"  ng-click="nextTen()">Next</a></li>
+	</ul>
+</div>
