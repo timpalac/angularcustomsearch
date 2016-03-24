@@ -8,5 +8,5 @@ angular.module("searchApp")
 
     return {
     	searchData: searchData
-    }  
+    }
 });

@@ -1,5 +1,5 @@
 (function(){
-	angular.module("searchApp", ['ngRoute','ui.bootstrap'])
+	angular.module("searchApp", ['ngRoute'])
 	.config(['$routeProvider', function($routeProvider) {
 	  $routeProvider.when('/search',{
 	    templateUrl: "views/searchView.html",

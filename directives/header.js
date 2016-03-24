@@ -4,7 +4,8 @@
 		return {
 		    restrict: 'E',
 		    scope: {
-		    	banner: '@'
+		    	banner: '@',
+		    	banner2: '@'
 		    },
 		    templateUrl: 'directives/header.html'
 		  };
